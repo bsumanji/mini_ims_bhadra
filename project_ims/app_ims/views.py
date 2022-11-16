@@ -7,9 +7,9 @@ def item_index(request):
     return render(request, 'items/index.html')
 
 def item_create(request):
-    item_create_form = ItemCreateForm
-    context = {"form": }
-    return render(request, 'items/create.html')
+    item_create_form = ItemCreateForm()
+    context = {"form" : item_create_form}
+    return render(request, 'items/create.html', context)
 
 def item_edit(request):
     return render(request, 'items/edit.html')
