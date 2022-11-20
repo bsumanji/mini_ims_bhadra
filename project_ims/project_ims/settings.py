@@ -83,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mini_ims',
-        'Host': '127.0.0.1',
+        'HOST': '127.0.0.1',
         'USER': 'root',
         'PASSWORD':'',
         'PORT': '3306',
